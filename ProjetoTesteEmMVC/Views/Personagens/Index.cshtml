@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Personagens";
+}
+
+<div class="text-center">
+    <h1> Listagem de Personagens </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Super Nome</th>
+                <th scope="col">Identidade Secreta</th>
+                <th scope="col">Poder Principal</th>
+                <th class="text-center" scope="col">Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Batman</td>
+                <td>Bruce Wayne</td>
+                <td>Dinheiro</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role ="button" class ="btn btn-primary" asp-controller="Personagens" asp-action="Editar">Editar</a> 
+                        <a role ="button" class="btn btn-danger" asp-controller="Personagens" asp-action="Excluir">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Superman</td>
+                <td>Clark Kent</td>
+                <td>Super Força</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Personagens" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Personagens" asp-action="Excluir">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Mullher Maravilha</td>
+                <td>Diana Prince</td>
+                <td>Super Força</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Personagens" asp-action="Editar">Editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Personagens" asp-action="Excluir">Excluir</a>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="">
+        <a class="btn btn-primary btn-lg btnAdicionar" role="button" asp-controller="Personagens" asp-action="CriarPersonagem" >Adicionar Personagem</a>
+    </div>
+           
+</div>
